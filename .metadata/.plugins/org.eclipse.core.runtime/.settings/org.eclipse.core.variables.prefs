@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+org.eclipse.core.variables.valueVariables=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<valueVariables>\r\n    <valueVariable description\="--add-opens java.base/java.lang\=ALL-UNNAMED" name\="--add-opens java.base/java.lang\=ALL-UNNAMED" readOnly\="false" value\="--add-opens java.base/java.lang\=ALL-UNNAMED"/>\r\n</valueVariables>\r\n

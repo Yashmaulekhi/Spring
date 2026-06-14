@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:c="http://www.springframework.org/schema/c"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- This is our bean -->
+
+<bean id="Person" class="com.springcore.instruction.Person">
+
+    <constructor-arg value="Durgesh"/>
+    
+    <constructor-arg value="12" type="int"/>
+    <constructor-arg ref="cer"/>
+
+</bean>
+<!--  <bean class="com.springcore.instruction.Certi" name="cer">
+<constructor-arg value="Android using kotlin"/>
+</bean>-->
+<!-- Another method -->
+<bean class="com.springcore.instruction.Certi" name="cer" c:name="python">
+</bean>
+<bean class="com.springcore.instruction.Addition" name="add" ><!-- see that  type maention karu                                    -->
+<constructor-arg value="12" type="int" index="1"/>
+<constructor-arg value="34" type="int" index="0"/>
+</bean>
+
+</beans>

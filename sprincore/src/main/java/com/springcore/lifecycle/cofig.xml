@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+
+   <!-- This scans the package and creates beans from @Component classes -->
+   <!--  <context:annotation-config />--><!-- for all annotation -->
+
+
+  <!--   <bean class="com.springcore.lifecycle.Samosa" name="s1" init-method="init" destroy-method="destroy">
+        <property name="price" value="10"/>
+    </bean>
+    <bean class="com.springcore.lifecycle.Pepsi" name="s2">
+        <property name="price" value="5"/>
+    </bean>--> 
+    <bean class="com.springcore.lifecycle.Example" name="example">
+    <property name="subject" value="Maths"></property></bean>
+</beans>
+<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" >
+
+</bean>
+</beans>
